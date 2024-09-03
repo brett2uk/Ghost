@@ -347,7 +347,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Restore coverage
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: ghost
       - run: rsync -av --remove-source-files ghost/coverage/* ghost/
